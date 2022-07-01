@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador - [Daiana Whitehead]</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/index.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <img src="IMG/iphone13/iphone_13.png" id="img-color">
+        <form class="container">
+            <h1>iPhone 13 PRO</h1>
+            <label for="name">Color:</label>
+            <select id="color" class="select"> 
+                <option value="">-- Seleccione una opcion --</option>
+                <option value="grafito">Grafito</option>
+                <option value="silver">Silver</option>
+                <option value="Sierra">Sierra</option>
+                <option value="gold">Gold</option>
+            </select>
+            <label for="name">Capacidad: </label>
+            <select id="capacidad" class="select"> 
+                <option value="">-- Seleccione una opcion --</option>
+                <option value="128"> 128 GB</option>
+                <option value="256">256 GB</option>
+                <option value="512">512 GB</option>
+            </select>
+            <label for="name" id="cant">Cantidad</label>
+            <input type="number" id="number" min="1" max="10">
+            <button type="button" onclick="calculatePrice()" id="btn">Cotizar</button>
+            <div id="error" style="display: none;">
+                <h2>Error: ingresar valores validos</h2>
+            </div>
+            <div id="resultMessaje" style="display: none;">
+                <h3>Cotizacion: $</p>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
